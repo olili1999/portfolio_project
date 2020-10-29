@@ -1,0 +1,153 @@
+html {
+}
+
+body {
+  font-family: "Varela", sans-serif;
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.navbar-top {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  max-height: 45px;
+}
+hr {
+  height: 0px;
+  border: none;
+  border-top: 1px solid black;
+}
+
+nav {
+  width: 100%;
+}
+
+.cover-photo {
+  height: 500px;
+  position: relative;
+}
+
+/*explore flex */
+.explore-flex {
+  color: rgb(225, 226, 223);
+  display: flex;
+  /* border: 2px solid green; */
+  justify-content: space-around;
+  border: 1px solid green;
+  height: 175px;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  background-color: #166d3b;
+  background-color: #63d471;
+  background-color: #1b8b00;
+  background-color: #015d00;
+  background-color: #1e453e;
+  background-color: #63d471;
+  background-color: #306844;
+  background-image: linear-gradient(314deg, #306844 0%, #2c4c3b 74%);
+  padding-bottom: 10px;
+}
+
+.explore-flex-image {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 5px;
+}
+
+.explore-flex-image:hover {
+  transform: scale(1.1);
+  transition: 1.5s;
+}
+
+.explore-flex-item {
+  text-align: left;
+  width: 340px;
+  height: 175px;
+  padding-top: 20px;
+  /* border: 2px solid green; */
+}
+
+.explore-flex-item p {
+  padding-top: 10px;
+  font-size: 15px;
+  font-weight: 550;
+}
+
+.explore {
+  padding-top: 50px;
+  padding-bottom: 0;
+}
+
+.navbar-top li {
+  float: left;
+}
+
+.navbar-top li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 25px;
+}
+
+ul {
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+.cover-photo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  border: 2px solid black;
+}
+
+.cover-photo-home {
+  width: 100%;
+  max-height: 100%;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  z-index: -5;
+}
+
+.register-button {
+  font-weight: 500;
+  font-size: 13px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-family: "Varela", sans-serif;
+  background-color: #35776b;
+  color: white;
+  border: none;
+  border-radius: 2em;
+  transition: all 0.2s;
+  height: 75px;
+  width: 150px;
+}
+
+.register-button:hover {
+  background-color: #63d471;
+}
+
+/*desktop */
+@media screen and (min-width: 850px) {
+}
+
+@media (prefers-reduced-motion: reduce) {
+}
