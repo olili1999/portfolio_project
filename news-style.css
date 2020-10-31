@@ -42,14 +42,8 @@ li a:hover {
   display: grid;
   gap: 10px;
   grid-template-columns: 750px 1fr;
-
   grid-template-rows: 117px 117px 117px 117px 117px 117px 117px 117px 117px;
   height: 1010px;
-}
-
-.grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
-  text-align: center;
 }
 
 .grid-container div img {
@@ -77,23 +71,21 @@ li a:hover {
   flex-wrap: wrap;
 }
 
-.grid-container .item img {
-  float: left;
-}
-
 .grid-container .item {
+  background-color: rgba(255, 255, 255, 0.8);
+
   border-radius: 5px;
   border: 0.5px solid grey;
   vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  box-shadow: 0 8px 6px -6px black;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.grid-container div:hover {
+.grid-container .item:hover {
   -webkit-animation-name: hvr-bob-float, hvr-bob;
   animation-name: hvr-bob-float, hvr-bob;
   -webkit-animation-duration: 0.3s, 1.5s;
@@ -114,13 +106,13 @@ li a:hover {
   grid-row: 1 / 5;
   width: 100%;
   height: 500px;
-  background: linear-gradient(
+  /* background: linear-gradient(
       to bottom right,
       rgba(0, 47, 75, 0.9),
       rgba(220, 66, 37, 0.9)
     ),
     url("main-photo.jpg");
-  background-size: cover;
+  background-size: cover; */
   font-family: "Raleway", sans-serif;
   color: white;
 
@@ -130,6 +122,99 @@ li a:hover {
   display: flex;
 
   border-radius: 5px;
+}
+
+.front.fed {
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+      to bottom right,
+      rgba(0, 47, 75, 0.9),
+      rgba(220, 66, 37, 0.9)
+    ),
+    url("main-photo.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0 8px 6px -6px black;
+}
+
+.back.fed {
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+      to bottom right,
+      rgba(0, 47, 75, 0.9),
+      rgba(220, 66, 37, 0.9)
+    ),
+    url("federer-fierce.jpg");
+  background-size: cover;
+  border-radius: 5px;
+  box-shadow: 0 8px 6px -6px black;
+}
+
+.front.kei {
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+      to bottom left,
+      rgba(189, 195, 199, 0.9),
+      rgba(44, 62, 80, 0.9)
+    ),
+    url("kei-nishikori.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0 8px 6px -6px black;
+}
+
+.back.kei {
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+      to bottom left,
+      rgba(189, 195, 199, 0.9),
+      rgba(44, 62, 80, 0.9)
+    ),
+    url("kei-fistbump.jpg");
+  background-size: cover;
+  border-radius: 5px;
+  box-shadow: 0 8px 6px -6px black;
+}
+
+.front,
+.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  overflow: hidden;
+  transition: transform 0.8s ease;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+.item1:hover .front,
+.item2:hover .front {
+  transform: rotateY(-180deg);
+}
+.item1:hover .back,
+.item2:hover .back {
+  transform: rotateY(0deg);
+}
+
+.item1,
+.item2 {
+  perspective: 75rem;
 }
 
 .item1 h1 {
@@ -142,13 +227,6 @@ li a:hover {
   width: 100%;
   height: 500px;
 
-  background: linear-gradient(
-      to bottom left,
-      rgba(189, 195, 199, 0.9),
-      rgba(44, 62, 80, 0.9)
-    ),
-    url("kei-nishikori.jpg");
-  background-size: cover;
   font-family: "Raleway", sans-serif;
   color: white;
 
