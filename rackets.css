@@ -1,0 +1,86 @@
+body {
+  font-family: "Varela", sans-serif;
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+ul {
+  position: sticky;
+  display: flex;
+  top: 0;
+  width: 100%;
+}
+li a:hover {
+  background-color: #111;
+}
+
+.navbar-top {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  max-height: 45px;
+}
+
+.navbar-top li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+  height: 100%;
+}
+
+.navbar-top img {
+  max-height: 35px;
+  margin: 5px 8px;
+}
+footer {
+  margin-top: 3px;
+  width: 100%;
+  background: #2c4c3b;
+  text-align: center;
+  color: #ffffff;
+  min-height: 50px;
+}
+footer p {
+  padding-top: 10px;
+}
+
+::selection {
+  background-color: #fff2ac;
+  background-image: linear-gradient(to right, #ffe359 0%, #fff2ac 100%);
+}
+
+/*SLIDERS*/
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 23px;
+  height: 24px;
+  background: url("tennis-emoji.png");
+
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 23px;
+  height: 25px;
+  border: 0;
+  cursor: pointer;
+}
+
+.sliderwrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.justifycontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

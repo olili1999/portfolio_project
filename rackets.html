@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="html5reset.css">
+  <link rel="stylesheet" type="text/css" href="rackets.css">
+  <link href="https://fonts.googleapis.com/css2?family=Varela&display=swap" rel="stylesheet">
+  <link rel="icon" href="tennis-ball.png" type="image/gif" sizes="16x16">
+
+
+  <style> 
+  .navbar-top .rackets{ 
+  background-color: #35776b;
+  font-style: bold;
+  }
+    
+  </style> 
+
+  <title>Find a Racket</title>
+</head>
+  <header> <header>
+  <body>
+      <nav> 
+        <ul class = "navbar-top">
+          <img src = "tennis-emoji.png"/>
+          <li><a href="index.html" class = "home">HOME</a></li>
+          <li><a href="news.html" class = "news">NEWS</a></li>
+          <li><a href="rackets.html" class = "rackets">RACKETS</a></li>
+          <li><a href="aboutandcontact.html" class = "aboutandcontact">ABOUT & CONTACT</a></li>
+        </ul>
+      </nav>
+
+      <div class = "sliderwrapper"> 
+        <div class="slidecontainer">
+          <div class = "justifycontainer"> 
+            <input type="range" min="1" max="3" value="2" class="slider" id="myRange1">
+            <p> Spin: <span id = "demo1"> </span></p>
+          </div>
+        </div>
+        <div class="slidecontainer">
+          <div class = "justifycontainer"> 
+            <input type="range" min="1" max="3" value="2" class="slider" id="myRange2">
+            <p> Power: <span id = "demo2"> </span></p>
+          </div>
+        </div>
+
+        <div class="slidecontainer">
+          <div class = "justifycontainer"> 
+            <input type="range" min="1" max="3" value="2" class="slider" id="myRange3">
+            <p> Feel: <span id = "demo3"> </span></p>
+          </div>
+        </div>
+
+      </div> 
+
+       
+
+       
+
+      <footer> 
+        <p>
+          Tennis Frands <br />
+          &copy; Oliver Li, 2020
+        </p>  
+      </footer>
+
+
+    <script src = "rackets.js"> </script> 
+
+  </body>
+
+</html>

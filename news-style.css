@@ -294,9 +294,40 @@ footer p {
   width: 100%;
 }
 
+.back.fed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: scroll;
+}
+
+.back.fed > p {
+  margin: 50px;
+  font-size: 2.5vh;
+}
+
+.back.kei {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: scroll;
+}
+
+.back.kei > p {
+  margin: 50px;
+  font-size: 2.5vh;
+}
+
 ::selection {
   background-color: #fff2ac;
   background-image: linear-gradient(to right, #ffe359 0%, #fff2ac 100%);
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
 }
 
 /* Bob */
