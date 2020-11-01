@@ -5,6 +5,13 @@ body {
   font-size: 13px;
 }
 
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+}
+
 ul {
   position: sticky;
   display: flex;
@@ -37,8 +44,11 @@ li a:hover {
   max-height: 35px;
   margin: 5px 8px;
 }
+
 footer {
   margin-top: 3px;
+  bottom: 0;
+  left: 0;
   width: 100%;
   background: #2c4c3b;
   text-align: center;
@@ -83,4 +93,24 @@ footer p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  grid-template-rows: 300px 300px 300px;
+}
+
+.item {
+  overflow: hidden;
+}
+.item > img {
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+}
+
+body {
+  border: 3px solid pink;
 }
