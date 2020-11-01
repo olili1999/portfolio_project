@@ -42,8 +42,7 @@ li a:hover {
   display: grid;
   gap: 10px;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 117px 117px 117px 117px 117px 117px 117px 117px 117px;
-  height: 1010px;
+  grid-template-rows: 117px 117px 117px 117px 117px 117px 117px 117px;
 }
 
 .grid-container div img {
@@ -54,11 +53,13 @@ li a:hover {
   animation: none;
   font-size: 1.5em;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+  margin-left: 10px;
 }
 
 .grid-container .item .column-flex p {
   animation: none;
   font-size: 1em;
+  margin-left: 10px;
 }
 
 .grid-container .item .column-flex {
@@ -69,6 +70,7 @@ li a:hover {
   animation: none;
   width: 100%;
   flex-wrap: wrap;
+  overflow-y: scroll;
 }
 
 .grid-container .item {
@@ -105,7 +107,7 @@ li a:hover {
 .item1 {
   grid-row: 1 / 5;
   width: 100%;
-  height: 500px;
+  height: 100%;
   /* background: linear-gradient(
       to bottom right,
       rgba(0, 47, 75, 0.9),
@@ -235,15 +237,16 @@ li a:hover {
   perspective: 75rem;
 }
 
-.item1 h1 {
+.item1 h1,
+.item2 h1 {
   font-size: 2em;
   letter-spacing: 0.25px;
 }
 
 .item2 {
-  grid-row: 5 / 10;
+  grid-row: 5 / 9;
   width: 100%;
-  height: 500px;
+  height: 100%;
 
   font-family: "Raleway", sans-serif;
   color: white;
@@ -257,17 +260,12 @@ li a:hover {
   border-radius: 5px;
 }
 
-.item2 h1 {
-  font-size: 2em;
-  letter-spacing: 0.25px;
-}
-
 .grid-container div {
   display: flex;
 }
 
 .grid-container div img {
-  max-width: 150px;
+  max-width: 175px;
 }
 
 footer {
@@ -294,19 +292,7 @@ footer p {
   width: 100%;
 }
 
-.back.fed {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  overflow: scroll;
-}
-
-.back.fed > p {
-  margin: 50px;
-  font-size: 2.5vh;
-}
-
+.back.fed,
 .back.kei {
   display: flex;
   justify-content: center;
@@ -315,6 +301,7 @@ footer p {
   overflow: scroll;
 }
 
+.back.fed > p,
 .back.kei > p {
   margin: 50px;
   font-size: 2.5vh;
@@ -376,5 +363,93 @@ footer p {
   100% {
     -webkit-transform: translateY(-8px);
     transform: translateY(-8px);
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .item1 {
+    grid-column: 1 / span 2;
+  }
+
+  .item2 {
+    grid-column: 1 / span 2;
+  }
+
+  /* item 1 and 2 card headers  */
+  .item1 h1,
+  .item2 h1 {
+    font-size: 1.25em;
+  }
+
+  .grid-container {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  /* make the smaller items span entire width  */
+  .grid-container .item {
+    grid-column: 1 / span 2;
+  }
+
+  /* BACKS OF THE FIRST TWO CARDS */
+  .back.fed > p,
+  .back.kei > p {
+    margin: 50px;
+    font-size: 1.5vh;
+  }
+
+  /* LATEST NEWS FONT SIZE  */
+  .header-div {
+    font-size: 1em;
+  }
+
+  /* TEXT in smaller containers */
+  .grid-container .item .column-flex h2 {
+    font-size: 1em;
+  }
+
+  .grid-container .item .column-flex p {
+    margin-top: 5px;
+    font-size: 0.75em;
+  }
+
+  .navbar-top {
+    max-height: 35px;
+    font-size: 8px;
+  }
+
+  .navbar-top li a {
+    padding: 16px 16px;
+  }
+
+  .navbar-top img {
+    max-height: 30px;
+    margin: 5px 8px;
+  }
+}
+
+/* iPhone 5 SE issues */
+@media only screen and (max-width: 370px) {
+  /* item 1 and 2 card headers  */
+  .item1 h1,
+  .item2 h1 {
+    font-size: 1em;
+  }
+
+  .header-div {
+    font-size: 0.8em;
+  }
+
+  .grid-container div img {
+    max-width: 135px;
+  }
+
+  /* TEXT in smaller containers */
+  .grid-container .item .column-flex h2 {
+    font-size: 0.8em;
+  }
+
+  .grid-container .item .column-flex p {
+    font-size: 0.7em;
   }
 }
