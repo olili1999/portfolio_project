@@ -41,7 +41,7 @@ li a:hover {
 .grid-container {
   display: grid;
   gap: 10px;
-  grid-template-columns: 750px 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 117px 117px 117px 117px 117px 117px 117px 117px 117px;
   height: 1010px;
 }
@@ -209,6 +209,24 @@ li a:hover {
 }
 .item1:hover .back,
 .item2:hover .back {
+  transform: rotateY(0deg);
+}
+
+.item1:focus .front,
+.item2:focus .front {
+  transform: rotateY(-180deg);
+}
+.item1:focus .back,
+.item2:focus .back {
+  transform: rotateY(0deg);
+}
+
+.item1:active .front,
+.item2:active .front {
+  transform: rotateY(-180deg);
+}
+.item1:active .back,
+.item2:active .back {
   transform: rotateY(0deg);
 }
 
