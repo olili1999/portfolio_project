@@ -125,7 +125,7 @@ function addItems(item){
     div.id = item.id;
 
     div.innerHTML = `
-      <img src = ${item.img_src}.png />
+      <img src = ${item.img_src}.png alt = "${item.text}"/>
       <h2> ${item.header} </h2> 
       <p> ${item.text} </p> 
     `;
