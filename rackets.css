@@ -10,6 +10,7 @@ html {
 }
 body {
   min-height: 100%;
+  position: relative;
 }
 
 ul {
@@ -46,7 +47,6 @@ li a:hover {
 }
 
 footer {
-  position: absolute;
   margin-top: 3px;
   bottom: 0;
   left: 0;
@@ -79,6 +79,13 @@ h1 + p {
 
 .paragraph-header {
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+
+  color: white;
+  background: #2c4c3b;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0px;
+  width: 100%;
 }
 /* END PARAGRAPH CONTENT */
 
@@ -145,12 +152,10 @@ h1 + p {
 }
 
 .item {
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
   overflow-y: scroll;
   border-radius: 5px;
   border: 1px solid grey;
@@ -182,7 +187,52 @@ h1 + p {
   background: transparent; /* make scrollbar transparent */
 }
 
-body {
-  border: 3px solid pink;
-  position: relative;
+@media only screen and (max-width: 700px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 225px 225px 225px 225px 225px 225px 225px 225px 225px;
+  }
+
+  .navbar-top {
+    background-color: #333;
+    max-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar-top > li {
+    width: 100%;
+  }
+  .navbar-top img {
+    height: 50px;
+    width: 35px;
+    margin: 5px 8px;
+  }
+
+  .grid-container {
+    margin: 0px;
+  }
+
+  .justifycontainer > p {
+    font-size: 1em;
+  }
+
+  .paragraph-header {
+    font-size: 0.5em;
+  }
+}
+
+@media only screen and (min-width: 701px) and (max-width: 1100px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 225px 225px 225px 225px 225px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .item {
+    background: transparent;
+  }
 }

@@ -5,6 +5,10 @@ body {
   font-size: 13px;
 }
 
+html {
+  height: 100%;
+}
+
 ul {
   position: sticky;
   display: flex;
@@ -38,9 +42,10 @@ li a:hover {
   margin: 5px 8px;
 }
 footer {
+  position: absolute;
+  margin-top: 10px;
   bottom: 0;
   left: 0;
-  position: absolute;
   margin-top: 3px;
   width: 100%;
   background: #2c4c3b;
@@ -54,20 +59,27 @@ footer p {
 
 /* FORM START */
 form {
-  border: 3px solid #f1f1f1;
+  border: 1px solid grey;
+  box-shadow: 0 5px 5px -5px grey;
+}
+
+.form {
+  margin: 20px 0px;
 }
 
 legend {
-  font-size: 125%;
-  font-style: italic;
+  font-size: 200%;
+  font-weight: bold;
   text-transform: uppercase;
   text-align: left;
+  margin-left: 10px;
 }
 
 label {
   display: inline-block;
   margin-right: 10px;
   width: 15%;
+  margin-left: 10px;
 }
 input {
   width: 100%;
@@ -78,7 +90,7 @@ input {
   box-sizing: border-box;
 }
 span {
-  margin-left: 20%;
+  margin-left: 18%;
   font-family: italic;
   font-weight: bold;
 }
@@ -96,16 +108,18 @@ textarea {
 input[type="checkbox"] {
   display: inline;
   width: inherit;
+  margin-left: 10px;
 }
 
 input[type="submit"] {
-  background-color: #38803c;
+  background-color: #2c4c3b;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
   cursor: pointer;
   width: 100%;
+  margin-bottom: 0;
 }
 
 input[type="submit"]:hover {
@@ -132,4 +146,29 @@ input[type="submit"]:hover {
     line-height: 25vh;
     vertical-align: top;
   }
+}
+
+@media screen and (max-width: 700px) {
+  .navbar-top {
+    background-color: #333;
+    max-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar-top > li {
+    width: 100%;
+  }
+  .navbar-top img {
+    height: 50px;
+    width: 35px;
+    margin: 5px 8px;
+  }
+}
+
+body {
+  min-height: 100%;
+  position: relative;
 }

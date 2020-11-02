@@ -86,6 +86,8 @@ var data = [
   {"img_src": "yonex-kyrgios", "spin": 2, "power": 2, "feel": 2, "header": "Yonex Kyrgios Edition","text": "The wilson blade is a great standard racket for beginners", "id": 23},
   {"img_src": "fedracket", "spin": 2, "power": 2, "feel": 2, "header": "Federer Racket", "text": "The wilson blade is a great standard racket for beginners", "id": 24}, 
   {"img_src": "babolat-nadal-junior", "spin": 2, "power": 2, "feel": 2, "header": "Babolat Nadal Junior", "text": "The wilson blade is a great standard racket for beginners", "id": 25}, 
+  {"img_src": "pure-drive", "spin": 2, "power": 2, "feel": 3, "header": "Babolat Pure Drive", "text": "The wilson blade is a great standard racket for beginners", "id": 26}, 
+  {"img_src": "yonex-kyrgios", "spin": 2, "power": 2, "feel": 3, "header": "Yonex Kyrgios Edition","text": "The wilson blade is a great standard racket for beginners", "id": 27},
 
 
   {"img_src": "fedracket", "spin": 2, "power": 3, "feel": 3, "header": "Federer Racket", "text": "The wilson blade is a great standard racket for beginners", "id": 6}, 
