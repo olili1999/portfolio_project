@@ -46,6 +46,7 @@ li a:hover {
 }
 
 footer {
+  position: absolute;
   margin-top: 3px;
   bottom: 0;
   left: 0;
@@ -64,20 +65,48 @@ footer p {
   background-image: linear-gradient(to right, #ffe359 0%, #fff2ac 100%);
 }
 
+/* END OF THE STUFF THAT'S NEEDED FOR EACH PAGE */
+
+/* BEGIN PARAGRAPH CONTENT */
+h1 {
+  font-size: 2.5em;
+  text-align: center;
+}
+h1 + p {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.paragraph-header {
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+}
+/* END PARAGRAPH CONTENT */
+
 /*SLIDERS*/
+.slider {
+  width: 100%;
+  height: 50px;
+  background: #d3d3d3;
+  border-radius: 5px;
+  outline: none;
+  -webkit-transition: 0.2s;
+}
+
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 23px;
-  height: 24px;
+  width: 35px;
+  height: 35px;
+  background: #d3d3d3;
+
   background: url("tennis-emoji.png");
 
   cursor: pointer;
 }
 
 .slider::-moz-range-thumb {
-  width: 23px;
-  height: 25px;
+  width: 35px;
+  height: 35px;
   border: 0;
   cursor: pointer;
 }
@@ -93,24 +122,67 @@ footer p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 20vw;
 }
 
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 10px;
-  grid-template-rows: 300px 300px 300px;
+  grid-template-rows: 225px 225px 225px;
+
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 100px;
+}
+
+.biggersliderwrapper {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.paragraph-header {
 }
 
 .item {
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  border-radius: 5px;
+  border: 1px solid grey;
+  box-shadow: 0 5px 5px -5px grey;
+
+  background: linear-gradient(to right, #ccffe4, #ccffe4);
+  background-repeat: no-repeat;
+  background-size: 0 100%;
+  transition: background-size 1s 0s;
 }
+
+.item:hover {
+  background-size: 100% 100%;
+}
+
 .item > img {
-  width: 100%;
-  height: 100%;
+  width: 75%;
+  height: 75%;
   object-fit: scale-down;
+}
+
+.rangedesc {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
 }
 
 body {
   border: 3px solid pink;
+  position: relative;
 }

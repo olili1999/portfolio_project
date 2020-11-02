@@ -19,7 +19,7 @@
 
   <title>Find a Racket</title>
 </head>
-  <header> <header>
+  <header> </header>
   <body>
       <nav> 
         <ul class = "navbar-top">
@@ -31,45 +31,39 @@
         </ul>
       </nav>
 
-
-      <div class="grid-container">
-        <div class="item item1"><img src = "babolat-1.jpg"/> </div> 
-        <div class="item item2"><img src = "wilson-ultra-2.jpg"/> </div>  
-        <div class="item item3"><img src = "row-1.jpg"/> </div>  
-        <div class="item item4"><img src = "row-1.jpg"/> </div> 
-        <div class="item item5"><img src = "row-1.jpg"/> </div>  
-        <div class="item item6"><img src = "row-1.jpg"/> </div>  
-        <div class="item item7"><img src = "row-1.jpg"/> </div> 
-        <div class="item item8"><img src = "row-1.jpg"/> </div>  
-        <div class="item item9"><img src = "row-1.jpg"/> </div>  
-    
+      <div class = "paragraph-header"> 
+        <h1> Introducing: Racket Finder </h1>
+        <p> Find your racket, on your terms!</p> 
       </div>
+ 
 
-
-      <div class = "sliderwrapper"> 
-        <div class="slidecontainer">
-          <div class = "justifycontainer"> 
-            <input type="range" min="1" max="3" value="2" class="slider" id="myRange1">
-            <p> Spin: <span id = "demo1"> </span></p>
+      <div class = "biggersliderwrapper"> 
+        <div class = "sliderwrapper"> 
+          <div class="slidecontainer">
+            <div class = "justifycontainer"> 
+              <input type="range" min="1" max="3" value="2" class="slider" id="myRange1">
+              <p class = "rangedesc"> Spin: <span id = "demo1"> </span></p>
+            </div>
           </div>
-        </div>
-        <div class="slidecontainer">
-          <div class = "justifycontainer"> 
-            <input type="range" min="1" max="3" value="2" class="slider" id="myRange2">
-            <p> Power: <span id = "demo2"> </span></p>
+          <div class="slidecontainer">
+            <div class = "justifycontainer"> 
+              <input type="range" min="1" max="3" value="2" class="slider" id="myRange2">
+              <p class = "rangedesc"> Power: <span id = "demo2"> </span></p>
+            </div>
           </div>
-        </div>
 
-        <div class="slidecontainer">
-          <div class = "justifycontainer"> 
-            <input type="range" min="1" max="3" value="2" class="slider" id="myRange3">
-            <p> Feel: <span id = "demo3"> </span></p>
+          <div class="slidecontainer">
+            <div class = "justifycontainer"> 
+              <input type="range" min="1" max="3" value="2" class="slider" id="myRange3">
+              <p class = "rangedesc"> Feel: <span id = "demo3"> </span></p>
+            </div>
           </div>
-        </div>
 
-      </div> 
-
-       
+        </div> 
+      </div>
+      <!-- BEGIN GRID -->
+      <div class="grid-container" id = "grid-container">
+      </div>
 
        
 
