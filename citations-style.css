@@ -1,0 +1,118 @@
+.skip a {
+  background: white;
+  left: 0;
+  padding: 6px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+  /*Your code here*/
+  position: absolute;
+  top: -40px;
+}
+.skip a:focus {
+  top: 0px;
+  border: 2px solid #000000;
+}
+
+body {
+  font-family: "Varela", sans-serif;
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+html {
+  height: 100%;
+}
+
+ul {
+  position: sticky;
+  display: flex;
+  top: 0;
+  width: 100%;
+}
+li a:hover {
+  background-color: #111;
+}
+
+.navbar-top {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  max-height: 45px;
+}
+
+.navbar-top li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+  height: 100%;
+}
+
+.navbar-top img {
+  max-height: 35px;
+  margin: 5px 8px;
+}
+footer {
+  position: absolute;
+  margin-top: 10px;
+  bottom: 0;
+  left: 0;
+  margin-top: 3px;
+  width: 100%;
+  background: #2c4c3b;
+  text-align: center;
+  color: #ffffff;
+  min-height: 50px;
+}
+footer p {
+  padding-top: 10px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 50%;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: 2.5px solid #2c4c3b;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 700px) {
+  .navbar-top {
+    background-color: #333;
+    max-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar-top > li {
+    width: 100%;
+  }
+  .navbar-top img {
+    height: 50px;
+    width: 35px;
+    margin: 5px 8px;
+  }
+}
+
+body {
+  min-height: 100%;
+  position: relative;
+}

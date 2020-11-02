@@ -108,9 +108,14 @@ li a:hover {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  height: 750px;
+  height: 500px;
   color: white;
   font-size: 3.5em;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: url("cover-photo-home.jpg");
 }
 
 .cover-photo > p {

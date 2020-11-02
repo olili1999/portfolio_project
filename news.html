@@ -13,19 +13,23 @@
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="stylesheet">
 
   <script src = "news-js.js"> </script> 
+  <!-- https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_attr_begin -->
 
 
   <style> 
     .navbar-top .news{ 
     background-color: #35776b;
     font-style: bold;
+    font-style: italic;
+
     }
-      
-    </style> 
+  </style> 
 
   <title>News!</title>
 </head>
 <body>
+  <div class="skip"><a href="#main">Skip to Main Content</a></div>
+
   <nav> 
     <ul class = "navbar-top">
       <img src = "tennis-emoji.png"/>
@@ -33,6 +37,8 @@
       <li><a href="news.html" class = "news">NEWS</a></li>
       <li><a href="rackets.html" class = "rackets">RACKETS</a></li>
       <li><a href="aboutandcontact.html" class = "aboutandcontact">CONTACT</a></li>
+      <li><a href="citations.html" class = "citations">CITATIONS</a></li>
+
     </ul>
   </nav>
   
@@ -40,11 +46,11 @@
     <h1 class = "headline"> THE LATEST NEWS FOR ALL THINGS TENNIS </h1>
   </div> 
     
-  <div class="grid-container">
-    <div class="item1" ><div class = "front fed" tabindex="2"><h1> ATP TOUR: FEDERER WINS AGAIN </h1></div><div class = "back fed" tabindex="3"><p>Few rivalries in sport divide fans with quite the fervour and wilful lack of understanding for an opposing point of view as does that involving Roger Federer, Rafael Nadal and Novak Djokovic.
+  <div class="grid-container" id = "main">
+    <div class="item1" tabindex="0"><div class = "front fed" ><h1> ATP TOUR: FEDERER WINS AGAIN </h1></div><div class = "back fed"><p>Few rivalries in sport divide fans with quite the fervour and wilful lack of understanding for an opposing point of view as does that involving Roger Federer, Rafael Nadal and Novak Djokovic.
 
       When those whose recall reaches back beyond the start of the millennium to weigh up the merits of Pete Sampras and Björn Borg as the other contenders in a magnificent top five, the battalions of young social media hawks smile upon them as quaintly romantic, with their love of wooden rackets, tight shorts and bad mullets. As great as those two players were, with 25 majors between them, they are regarded as intruders on a private argument. </p></div></div>
-    <div class="item2"><div class = "front kei" tabindex="4"><h1> NISHIKORI UPSETS ONE OF THE BIG 3</h1></div><div class = "back kei" tabindex="5"><p>Kei Nishikori, this year’s sixth seed and the runner-up at the 2014 Open, came back and stunned Murray, 1-6, 6-4, 4-6, 6-1, 7-5, in a thrilling, back-and-forth duel that was determined, at least one man thought, by the roof.
+    <div class="item2" tabindex = "0"><div class = "front kei"><h1> NISHIKORI UPSETS ONE OF THE BIG 3</h1></div><div class = "back kei"><p>Kei Nishikori, this year’s sixth seed and the runner-up at the 2014 Open, came back and stunned Murray, 1-6, 6-4, 4-6, 6-1, 7-5, in a thrilling, back-and-forth duel that was determined, at least one man thought, by the roof.
 
       “I think definitely under the roof he was able to dictate more of the points,” Murray said.
       
