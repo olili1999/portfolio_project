@@ -283,7 +283,6 @@ li a:hover {
 
 .grid-container div img {
   max-width: 175px;
-  max-height: 117px;
   object-fit: cover;
 }
 
