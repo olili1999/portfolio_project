@@ -108,7 +108,7 @@ li a:hover {
   align-items: center;
   justify-content: center;
   height: 625px;
-  color: white;
+  /* color: white; */
   font-size: 3.5em;
 
   background-color: black;
@@ -119,7 +119,9 @@ li a:hover {
   background-size: cover;
 }
 
-.cover-photo > p {
+.cover-photo > h1 {
+  color: white;
+  background-color: transparent;
   text-align: center;
   text-shadow: 5px 5px 5px rgba(0, 0, 0, 1);
 }
