@@ -507,4 +507,8 @@ footer p {
   .grid-container .item:hover {
     animation: none;
   }
+  .front,
+  .back {
+    transition: none;
+  }
 }
