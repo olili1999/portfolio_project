@@ -509,6 +509,6 @@ footer p {
   }
   .front,
   .back {
-    transition: transform 0s ease;
+    transition: none !important;
   }
 }
