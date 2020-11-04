@@ -84,11 +84,11 @@ footer p {
 /* END OF THE STUFF THAT'S NEEDED FOR EACH PAGE */
 
 /* BEGIN PARAGRAPH CONTENT */
-h1 {
+.paragraph-header h1 {
   font-size: 2.5em;
   text-align: center;
 }
-h1 + p {
+.paragraph-header h1 + p {
   font-size: 1.5em;
   text-align: center;
 }
