@@ -1,3 +1,19 @@
+.skip a {
+  background: white;
+  left: 0;
+  padding: 6px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+  /*Your code here*/
+  position: absolute;
+  top: -40px;
+}
+.skip a:focus {
+  top: 0px;
+  border: 2px solid #000000;
+}
+
 html {
   min-height: 100%;
 }
